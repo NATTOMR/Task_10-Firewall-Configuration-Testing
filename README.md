@@ -2,19 +2,17 @@
   <img src="images/banner.png" alt="Firewall Configuration & Testing" width="100%" height="350">
 </p>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Project-Firewall%20Configuration%20%26%20Testing-orange?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Platform-Linux%20%7C%20Windows-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Firewall-UFW%20%7C%20Windows%20Defender-green?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Security-Blue%20Team-informational?style=for-the-badge" />
+</p>
+
 # 🔐 Firewall Configuration & Testing
 
-This project demonstrates hands-on firewall configuration, testing, and
-monitoring using **Linux (UFW)** and **Windows Defender Firewall**. The goal is to
-apply real-world defensive security practices by controlling inbound and outbound
-traffic, reducing the attack surface, and validating firewall behavior through
-testing and log analysis.
 
-> **⚠️ All configurations and testing procedures in this project were performed in a
-> controlled virtual lab environment for educational purposes.**
-
-
-# 🔥Firewall Configuration & Testing
+# 🔐 Firewall Configuration & Testing
 
 ## 📌 Project Overview
 This project demonstrates practical firewall configuration and testing skills using host-based firewalls. The goal is to understand firewall concepts, configure security rules, test network connectivity, analyze logs, block malicious traffic, and document the impact of firewall rules.
