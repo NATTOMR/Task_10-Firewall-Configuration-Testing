@@ -52,6 +52,7 @@ Process in 5 Steps:
 ## Firewall Types
 ![image](https://github.com/NATTOMR/Task_10-Firewall-Configuration-Testing/blob/main/images/types-of-firewall.png)
 
+
 ## 🛠️ Tools Used
 - **UFW (Uncomplicated Firewall)** – Linux
 - **Windows Defender Firewall** – Windows
@@ -72,6 +73,12 @@ Process in 5 Steps:
 `sudo ufw status verbose`
 ```
 ![images]()
+
+Note: Kali Linux does not include UFW by default, as it primarily relies on iptables.
+For this project, UFW was manually installed to demonstrate simplified firewall
+management and rule documentation.
+
+
 Windows:
 
 # Windows Security → Firewall & Network Protection → Enable Firewall
