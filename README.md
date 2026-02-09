@@ -216,9 +216,9 @@ Means:
   📌 Logged successfully
 
 ### This satisfies:
-  ✅ Observe logs
-  ✅ Block traffic
-  ✅ Explain impact
+    ✅ Observe logs
+    ✅ Block traffic
+    ✅ Explain impact
 
 ### 🟢 [UFW ALLOW]
 
@@ -349,5 +349,5 @@ allowed and denied traffic.
 
 
 # 🧑‍💻 Author
-[NATTO MUNI CHAKMA]
+[NATTO MUNI CHAKMA] <br>
  Cybersecurity Enthusiast | SOC & Blue Team Learner
