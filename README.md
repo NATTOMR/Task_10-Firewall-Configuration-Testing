@@ -243,29 +243,51 @@ This proves:
 
    * Stateful firewall behavior is correct
 
-# Windows Security → Firewall & Network Protection → Enable Firewall
-2️⃣ Set Default Policies
-- sudo ufw default deny incoming
-- sudo ufw default allow outgoing
-✔️ This follows the principle of least privilege.
 
-# 3️⃣ Allow Required Ports
-- `sudo ufw allow ssh`
-- `sudo ufw allow 80/tcp`
-- `sudo ufw allow 443/tcp`
-- `Port	Service	Reason`
-- `22	SSH	Remote administration`
-- `80	HTTP	Web traffic`
-- `443	HTTPS	Secure web traffic`
-# 4️⃣ Deny Unused or Risky Ports
-- `sudo ufw deny 21`
-- `sudo ufw deny 23`
-- `Port	Service	Risk`
-- `21	FTP	Cleartext credentials`
-- `23	Telnet	Insecure protocol`
+## 🪟 Windows Firewall Configuration
+
+Windows Defender Firewall was configured using administrative command-line tools
+to enforce secure inbound and outbound traffic policies. The firewall was enabled
+for all network profiles to protect the system across public, private, and domain
+networks.
+
+---
+
+### 🔐 Enable Windows Firewall
+
+The firewall was enabled for all profiles using an elevated command prompt:
+
+``powershell
+```
+netsh advfirewall set allprofiles state on
+```
+  🛡️ Default Firewall Policies
+
+To follow the principle of least privilege, default firewall policies were set
+to block all inbound traffic while allowing outbound traffic.
+
+```
+netsh advfirewall set allprofiles firewallpolicy blockinbound,allowoutbound
+```
+
+- Inbound traffic is blocked by default to prevent unauthorized access
+
+- Outbound traffic is allowed to enable normal system operations such as
+ updates and web access
+
+  ✅ Allow Required Inbound Ports
+
+Only essential services were explicitly allowed through the firewall.
+```
+- netsh advfirewall firewall add rule name="Allow SSH" dir=in action=allow protocol=TCP localport=22
+- netsh advfirewall firewall add rule name="Allow HTTP" dir=in action=allow protocol=TCP localport=80
+- netsh advfirewall firewall add rule name="Allow HTTPS" dir=in action=allow protocol=TCP loc
+```
+
 # 5️⃣ Block a Malicious IP
+
 `sudo ufw deny from 192.168.1.100`
-✔️ Prevents communication from a known malicious or suspicious source.
+  ✔️ Prevents communication from a known malicious or suspicious source.
 
 #🧪 Testing & Verification
 - Connectivity Tests
