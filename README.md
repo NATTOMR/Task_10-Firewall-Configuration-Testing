@@ -25,6 +25,7 @@ A firewall is a network security device designed to monitor, filter, and control
 Firewalls come in both hardware and software forms, and they work by inspecting data packets and determining whether to allow or block them based on a set of rules. Organizations can configure these rules to permit or deny traffic based on various criteria, such as source and destination IP addresses, port numbers, and protocol type. 
 
 ### Firewalls have evolved through four distinct phases:
+![images](https://github.com/NATTOMR/Task_10-Firewall-Configuration-Testing/blob/main/images/firewall-types1.png)
 
 - First-generation firewalls began in 1989 with the packet filtering approach. These firewalls examine individual data packets, making decisions to allow or block them based on predefined rules. However, these were unable to identify if those packets contained malicious code (i.e., malware).
 
