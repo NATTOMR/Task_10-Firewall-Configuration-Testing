@@ -301,10 +301,28 @@ activity.
 The following command was executed in an **elevated Command Prompt / PowerShell**
 to block all inbound traffic from the malicious IP address:
 
-``powershell
+powershell <br>
 `netsh advfirewall firewall add rule name="Block Malicious IP" dir=in action=block remoteip=140.82.113.25`
 
 ---
+
+## 📊 Firewall Rules Summary Table
+
+| Rule No. | Platform | Direction | Action | Port / IP | Protocol | Purpose |
+|--------|----------|-----------|--------|-----------|----------|---------|
+| 1 | Linux (UFW) | Inbound | Allow | 22 | TCP | Secure remote administration |
+| 2 | Linux (UFW) | Inbound | Allow | 80 | TCP | Allow web traffic |
+| 3 | Linux (UFW) | Inbound | Allow | 443 | TCP | Allow secure web traffic |
+| 4 | Linux (UFW) | Inbound | Deny | 21 | TCP | Block insecure FTP |
+| 5 | Linux (UFW) | Inbound | Deny | 23 | TCP | Block insecure Telnet |
+| 6 | Linux (UFW) | Inbound | Deny | 140.82.113.25 | All | Block malicious IP |
+| 7 | Windows | Inbound | Allow | 22 | TCP | Allow SSH |
+| 8 | Windows | Inbound | Allow | 80 | TCP | Allow HTTP |
+| 9 | Windows | Inbound | Allow | 443 | TCP | Allow HTTPS |
+| 10 | Windows | Inbound | Block | 21 | TCP | Block FTP |
+| 11 | Windows | Inbound | Block | 23 | TCP | Block Telnet |
+| 12 | Windows | Inbound | Block | 140.82.113.25 | All | Block malicious IP |
+
 
 ### 🔐 Default Firewall Policies
 
