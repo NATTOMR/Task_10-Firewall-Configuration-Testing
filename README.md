@@ -72,7 +72,8 @@ Process in 5 Steps:
 `sudo ufw enable`
 `sudo ufw status verbose`
 ```
-![images]()
+![images](https://github.com/NATTOMR/Task_10-Firewall-Configuration-Testing/blob/main/images/UFW-1.png)
+![images](https://github.com/NATTOMR/Task_10-Firewall-Configuration-Testing/blob/main/images/UFW-3.png)
 
 Note: Kali Linux does not include UFW by default, as it primarily relies on iptables.
 For this project, UFW was manually installed to demonstrate simplified firewall
