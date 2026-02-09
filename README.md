@@ -96,6 +96,30 @@ management and rule documentation.
 sudo ufw allow 80/tcp
 sudo ufw allow 443/tcp
 ```
+
+## Allowing and Denying Firewall Ports
+
+Firewall rules were configured to explicitly allow required services and deny
+unused or insecure ports.
+
+### Allowed ports:
+- 22/tcp (SSH) for secure remote access `sudo ufw allow 22/tcp`
+- 80/tcp (HTTP) for web traffic `sudo ufw allow 80/tcp`
+- 443/tcp (HTTPS) for encrypted web traffic `sudo ufw allow 443/tcp`
+
+### Denied ports:
+- 21/tcp (FTP) due to plaintext credential transmission `sudo ufw deny 21/tcp`
+note:
+- ❌ Sends credentials in plaintext
+- ❌ High risk
+- 23/tcp (Telnet) due to lack of encryption `sudo ufw deny 23/tcp`
+not:
+- ❌ No encryption
+- ❌ Common attack target
+This configuration reduces the system attack surface while ensuring required
+services remain accessible.
+
+
 Windows:
 
 # Windows Security → Firewall & Network Protection → Enable Firewall
