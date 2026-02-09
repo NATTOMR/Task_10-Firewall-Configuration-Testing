@@ -178,7 +178,7 @@ The connection was refused, confirming that the firewall successfully blocked
 Telnet traffic. This verifies that insecure legacy services are effectively
 restricted by the firewall configuration.
 
-![image]()
+![image](https://github.com/NATTOMR/Task_10-Firewall-Configuration-Testing/blob/main/images/ubuntu%20output-2.png)
 ### Set Logging Level
 `sudo ufw logging medium`
  - note: UFW logs are stored at:
