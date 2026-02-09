@@ -1,4 +1,4 @@
-![Firewall Configuration & Testing](./firewall banner.png)
+![Firewall Configuration & Testing](https://github.com/NATTOMR/Task_10-Firewall-Configuration-Testing/blob/main/images/firewall%20banner.png)
 
 # 🔥Firewall Configuration & Testing
 
