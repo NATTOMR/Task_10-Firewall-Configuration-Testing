@@ -66,9 +66,11 @@ Process in 5 Steps:
 
 ### 1️⃣ Enable Firewall
 **Linux (UFW):**
-``bash
+```bash
 `sudo ufw enable`
 `sudo ufw status verbose`
+```
+![images]()
 Windows:
 
 # Windows Security → Firewall & Network Protection → Enable Firewall
