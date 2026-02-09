@@ -104,7 +104,13 @@ unused or insecure ports.
 
 ### Allowed ports:
 - 22/tcp (SSH) for secure remote access `sudo ufw allow 22/tcp`
+note:
+* ✔️ Secure remote access
+* ✔️ Mandatory on servers
 - 80/tcp (HTTP) for web traffic `sudo ufw allow 80/tcp`
+  Note:
+  * ✔️ Web traffic
+  * ✔️ Common real-world services
 - 443/tcp (HTTPS) for encrypted web traffic `sudo ufw allow 443/tcp`
 
 ### Denied ports:
