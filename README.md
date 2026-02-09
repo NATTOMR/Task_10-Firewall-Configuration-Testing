@@ -167,11 +167,11 @@ incident investigation and troubleshooting.
 
 ### Blocked Port Verification (Telnet)
 
-A connection attempt was made from an external Ubuntu machine to port 23 (Telnet)
+- A connection attempt was made from an external Ubuntu machine to port 23 (Telnet)
 on the target system.
 
-Command used:
-telnet 10.0.2.15 23
+- Command used:
+`telnet 10.0.2.15 23`
 
 The connection was refused, confirming that the firewall successfully blocked
 Telnet traffic. This verifies that insecure legacy services are effectively
@@ -188,6 +188,55 @@ restricted by the firewall configuration.
 
 ### Monitor Logs in Real Time
 `sudo tail -f /var/log/ufw.log`
+
+![image]()
+
+🔴 [UFW BLOCK]
+
+Example:
+
+```
+[UFW BLOCK] IN=eth0 SRC=140.82.113.25 DST=10.0.2.15
+```
+
+
+Means:
+
+  ❌ Traffic was blocked
+
+  🌐 Came from an external IP
+
+  🛡️ Firewall rule was enforced
+
+  📌 Logged successfully
+
+### This satisfies:
+  ✅ Observe logs
+  ✅ Block traffic
+  ✅ Explain impact
+
+### 🟢 [UFW ALLOW]
+
+Example:
+
+```
+[UFW ALLOW] OUT=eth0 SRC=10.0.2.15 DST=192.168.1.1 DPT=53
+```
+
+
+Means:
+
+  ✅ Outbound traffic allowed
+
+  🌍 DNS requests (port 53)
+ 
+  🔁 Normal system behavior
+
+This proves:
+
+   * Outbound rules are working
+
+   * Stateful firewall behavior is correct
 
 # Windows Security → Firewall & Network Protection → Enable Firewall
 2️⃣ Set Default Policies
