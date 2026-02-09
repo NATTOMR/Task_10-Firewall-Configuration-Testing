@@ -77,8 +77,33 @@ Process in 5 Steps:
 Note: Kali Linux does not include UFW by default, as it primarily relies on iptables.
 For this project, UFW was manually installed to demonstrate simplified firewall
 management and rule documentation.
+## Configure Default Firewall Policies
+- Deny All Incoming Traffic
+```sudo ufw default deny incoming
+```
 
+- Allow All Outgoing Traffic
+```
+sudo ufw default allow outgoing
+```
+## Allow Essential Inbound Traffic
+- Allow SSH (VERY IMPORTANT)
 
+- Even if you’re local now, always do this first.
+
+```sudo ufw allow ssh
+```
+
+- or explicitly:
+
+```
+sudo ufw allow 22/tcp
+```
+## Allow Web Traffic
+```
+sudo ufw allow 80/tcp
+sudo ufw allow 443/tcp
+```
 Windows:
 
 # Windows Security → Firewall & Network Protection → Enable Firewall
