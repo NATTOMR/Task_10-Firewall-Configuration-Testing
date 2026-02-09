@@ -131,7 +131,23 @@ services remain accessible.
 ### 🔍 Verify Denied Ports
 `sudo ufw status numbered`
 
-Windows:
+```
+### Connectivity Testing (Nmap)
+
+Network connectivity was tested using Nmap from an external Ubuntu machine.
+
+Scan command:
+nmap 10.0.2.15
+
+Results:
+- Port 22/tcp (SSH) is open, confirming allowed inbound access
+- All other TCP ports are closed or filtered
+- No unnecessary services are exposed
+
+This confirms that firewall rules are correctly enforced and only required
+services are accessible.
+```
+![image]()
 
 # Windows Security → Firewall & Network Protection → Enable Firewall
 2️⃣ Set Default Policies
