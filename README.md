@@ -261,6 +261,7 @@ The firewall was enabled for all profiles using an elevated command prompt:
 ```
 netsh advfirewall set allprofiles state on
 ```
+![image]()
   🛡️ Default Firewall Policies
 
 To follow the principle of least privilege, default firewall policies were set
@@ -283,7 +284,9 @@ Only essential services were explicitly allowed through the firewall.
 - netsh advfirewall firewall add rule name="Allow HTTP" dir=in action=allow protocol=TCP localport=80
 - netsh advfirewall firewall add rule name="Allow HTTPS" dir=in action=allow protocol=TCP loc
 ```
-
+![image]()
+![image]()
+![image]()
 # 5️⃣ Block a Malicious IP
 
 `sudo ufw deny from 192.168.1.100`
