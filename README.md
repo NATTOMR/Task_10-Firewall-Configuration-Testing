@@ -125,6 +125,11 @@ unused or insecure ports.
 This configuration reduces the system attack surface while ensuring required
 services remain accessible.
 
+### 🔍 Verify Allowed Ports
+`sudo ufw status numbered`
+
+### 🔍 Verify Denied Ports
+`sudo ufw status numbered`
 
 Windows:
 
