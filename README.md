@@ -190,7 +190,7 @@ restricted by the firewall configuration.
 ### Monitor Logs in Real Time
 `sudo tail -f /var/log/ufw.log`
 
-![image]()
+![image](https://github.com/NATTOMR/Task_10-Firewall-Configuration-Testing/blob/main/images/f%20log%20obsevation.png)
 
 🔴 [UFW BLOCK]
 
