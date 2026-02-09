@@ -83,21 +83,17 @@ management and rule documentation.
 ```
 
 - Allow All Outgoing Traffic
-```
-sudo ufw default allow outgoing
+```sudo ufw default allow outgoing
 ```
 ## Allow Essential Inbound Traffic
 - Allow SSH (VERY IMPORTANT)
 
 - Even if you’re local now, always do this first.
-
 ```sudo ufw allow ssh
 ```
 
 - or explicitly:
-
-```
-sudo ufw allow 22/tcp
+```sudo ufw allow 22/tcp
 ```
 ## Allow Web Traffic
 ```
