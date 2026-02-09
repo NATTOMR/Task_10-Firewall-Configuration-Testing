@@ -284,7 +284,7 @@ Only essential services were explicitly allowed through the firewall.
 - netsh advfirewall firewall add rule name="Allow HTTP" dir=in action=allow protocol=TCP localport=80
 - netsh advfirewall firewall add rule name="Allow HTTPS" dir=in action=allow protocol=TCP loc
 ```
-![image]()
+![image](https://github.com/NATTOMR/Task_10-Firewall-Configuration-Testing/blob/main/images/wfw-3.jpeg)
 ![image]()
 ![image]()
 # 5️⃣ Block a Malicious IP
