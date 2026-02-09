@@ -149,6 +149,46 @@ services are accessible.
 ```
 ![image]()
 
+
+### Firewall Log Monitoring
+
+UFW logging was enabled to monitor firewall activity and verify rule enforcement.
+Firewall logs were observed using the ufw.log file.
+
+Blocked connection attempts were recorded when scanning denied ports, confirming
+that firewall rules were actively enforced. Log entries included source IP,
+destination IP, protocol, and destination port information.
+
+Log monitoring provides visibility into suspicious activity and supports
+incident investigation and troubleshooting.
+
+### Enable Logging
+`sudo ufw logging on`
+
+### Blocked Port Verification (Telnet)
+
+A connection attempt was made from an external Ubuntu machine to port 23 (Telnet)
+on the target system.
+
+Command used:
+telnet 10.0.2.15 23
+
+The connection was refused, confirming that the firewall successfully blocked
+Telnet traffic. This verifies that insecure legacy services are effectively
+restricted by the firewall configuration.
+
+![image]()
+### Set Logging Level
+`sudo ufw logging medium`
+ - note: UFW logs are stored at:
+`/var/log/ufw.log`
+
+### View Firewall Logs
+`sudo tail /var/log/ufw.log`
+
+### Monitor Logs in Real Time
+`sudo tail -f /var/log/ufw.log`
+
 # Windows Security → Firewall & Network Protection → Enable Firewall
 2️⃣ Set Default Policies
 - sudo ufw default deny incoming
