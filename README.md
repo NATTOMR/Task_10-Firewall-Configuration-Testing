@@ -165,6 +165,9 @@ incident investigation and troubleshooting.
 
 ### Enable Logging
 `sudo ufw logging on`
+
+- From ubuntu machine check the kali open ports
+
 ![image](https://github.com/NATTOMR/Task_10-Firewall-Configuration-Testing/blob/main/images/ubuntu%20output-1.png)
 
 ### Blocked Port Verification (Telnet)
