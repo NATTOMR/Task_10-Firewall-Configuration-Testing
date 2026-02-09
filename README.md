@@ -288,63 +288,42 @@ Only essential services were explicitly allowed through the firewall.
 ![image](https://github.com/NATTOMR/Task_10-Firewall-Configuration-Testing/blob/main/images/wfw-3.jpeg)
 ![image](https://github.com/NATTOMR/Task_10-Firewall-Configuration-Testing/blob/main/images/wfw-4.jpeg)
 
+### 🧱 Blocking a Malicious IP Address (Windows Firewall)
 
-# 5️⃣ Block a Malicious IP
+Blocking a malicious IP address is a common defensive security measure used to
+prevent unauthorized access, repeated attack attempts, or suspicious network
+activity.
 
-`sudo ufw deny from 192.168.1.100`
-  ✔️ Prevents communication from a known malicious or suspicious source.
+---
 
-#🧪 Testing & Verification
-- Connectivity Tests
-- ping google.com
-- curl http://localhost
-- Port Scanning
-- nmap localhost
-- ✔️ Confirms allowed ports are accessible
-- ❌ Blocked ports are unreachable
+####  Block Malicious IP (Inbound Traffic)
 
-#📄 Log Monitoring
-View Firewall Logs (Linux)
-`sudo tail -f /var/log/ufw.log`
-- ✔️ Observed blocked packets
-- ✔️ Verified denied IP traffic
-- ✔️ Confirmed rule enforcement
+The following command was executed in an **elevated Command Prompt / PowerShell**
+to block all inbound traffic from the malicious IP address:
 
-📝 Firewall Rules Documentation
-Rule #	Action	Port/IP	Protocol	Purpose
-- 1	Allow	22	TCP	Secure remote access
-- 2	Allow	80	TCP	Web traffic
-- 3	Allow	443	TCP	Secure web traffic
-- 4	Deny	21	TCP	Block FTP
-- 5	Deny	23	TCP	Block Telnet
-- 6	Deny	192.168.1.100	All	Block malicious IP
-#🔍 Security Impact Analysis
-- Reduced attack surface by blocking unused services
+``powershell
+`netsh advfirewall firewall add rule name="Block Malicious IP" dir=in action=block remoteip=140.82.113.25`
 
-- Prevented unauthorized inbound connections
+---
 
-- Mitigated risk from insecure legacy protocols
+### 🔐 Default Firewall Policies
 
-- Improved visibility through logging
+| Platform | Incoming Traffic | Outgoing Traffic | Security Model |
+|--------|------------------|------------------|----------------|
+| Linux (UFW) | Deny | Allow | Least Privilege |
+| Windows Firewall | Block | Allow | Least Privilege |
 
-- Demonstrated effective host-based firewall management
+---
 
-# 📦 Deliverables
-- Firewall rules documentation
+### 🛡️ Overall Security Impact
+- Reduced system attack surface  
+- Prevented unauthorized inbound access  
+- Blocked insecure legacy services  
+- Mitigated threats from malicious IP addresses  
+- Enforced least-privilege network access model  
 
-- Connectivity test results
-
-- Log analysis
-
-- Security impact explanation
-- 
-## 📚 Firewall Concepts Covered
-- Inbound vs Outbound traffic
-- Stateful vs Stateless firewalls
-- Default deny vs default allow
-- Port-based filtering
-- IP-based blocking
-- Logging and monitoring
+This firewall configuration demonstrates effective host-based security hardening
+across both Linux and Windows environments.
 
 ---
 
@@ -353,15 +332,22 @@ Rule #	Action	Port/IP	Protocol	Purpose
 - ✔️ Hands-on experience with real security tools
 - ✔️ Portfolio-ready cybersecurity project
 
-# 🚀 Future Improvements
-- Automate rule deployment with scripts
+## 🏁 Conclusion
 
-- Integrate IDS/IPS (Snort / Suricata)
+This project demonstrated practical firewall configuration and testing across
+both Linux and Windows environments using host-based firewalls. UFW was used on
+Kali Linux to configure inbound and outbound rules, enforce a deny-by-default
+policy, monitor firewall logs, and block malicious traffic. Windows Defender
+Firewall was configured using administrative command-line tools to apply similar
+security controls and enforce least-privilege access.
 
-- Centralized logging with SIEM
+Firewall rules were tested using tools such as Nmap and Telnet from an external
+system, confirming that only required services were accessible while insecure
+and unused ports were successfully blocked. Firewall logging and system journal
+analysis verified that rules were actively enforced and provided visibility into
+allowed and denied traffic.
 
-- Apply firewall hardening benchmarks
 
 # 🧑‍💻 Author
 [NATTO MUNI CHAKMA]
-Cybersecurity Student | Blue Team | Network Security
+ Cybersecurity Enthusiast | SOC & Blue Team Learner
