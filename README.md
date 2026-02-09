@@ -49,7 +49,7 @@ Process in 5 Steps:
 5. Logging and Alerts:  Maintains detailed logs of actions and generates alerts for suspicious activity or unauthorized access attempts.
 
 ## Firewall Types
-
+![image](https://github.com/NATTOMR/Task_10-Firewall-Configuration-Testing/blob/main/types-of-firewall.png)
 
 ## 🛠️ Tools Used
 - **UFW (Uncomplicated Firewall)** – Linux
