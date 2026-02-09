@@ -270,7 +270,7 @@ to block all inbound traffic while allowing outbound traffic.
 ```
 netsh advfirewall set allprofiles firewallpolicy blockinbound,allowoutbound
 ```
-![image](https://github.com/NATTOMR/Task_10-Firewall-Configuration-Testing/blob/main/images/wfw-2.jpeg)
+
 - Inbound traffic is blocked by default to prevent unauthorized access
 
 - Outbound traffic is allowed to enable normal system operations such as
@@ -284,9 +284,11 @@ Only essential services were explicitly allowed through the firewall.
 - netsh advfirewall firewall add rule name="Allow HTTP" dir=in action=allow protocol=TCP localport=80
 - netsh advfirewall firewall add rule name="Allow HTTPS" dir=in action=allow protocol=TCP loc
 ```
+![image](https://github.com/NATTOMR/Task_10-Firewall-Configuration-Testing/blob/main/images/wfw-2.jpeg)
 ![image](https://github.com/NATTOMR/Task_10-Firewall-Configuration-Testing/blob/main/images/wfw-3.jpeg)
-![image]()
-![image]()
+![image](https://github.com/NATTOMR/Task_10-Firewall-Configuration-Testing/blob/main/images/wfw-4.jpeg)
+
+
 # 5️⃣ Block a Malicious IP
 
 `sudo ufw deny from 192.168.1.100`
