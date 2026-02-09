@@ -365,6 +365,26 @@ and unused ports were successfully blocked. Firewall logging and system journal
 analysis verified that rules were actively enforced and provided visibility into
 allowed and denied traffic.
 
+## 📚 Security References
+
+1. NIST. (2009). *Guidelines on Firewalls and Firewall Policy (SP 800-41 Rev.1)*.  
+   https://csrc.nist.gov/publications/detail/sp/800-41/rev-1/final
+
+2. OWASP Foundation. (n.d.). *Network Security and Hardening*.  
+   https://owasp.org
+
+3. Microsoft. (n.d.). *Windows Defender Firewall with Advanced Security*.  
+   https://learn.microsoft.com/en-us/windows/security/operating-system-security/network-security/windows-firewall/
+
+4. Canonical Ltd. (n.d.). *UFW – Uncomplicated Firewall Documentation*.  
+   https://help.ubuntu.com/community/UFW
+
+5. Nmap Project. (n.d.). *Nmap Network Scanning Reference Guide*.  
+   https://nmap.org/book/man.html <br>
+   
+> **⚠️ All configurations and testing procedures in this project were performed in a
+> controlled virtual lab environment for educational purposes.**
+
 
 # 🧑‍💻 Author
 [NATTO MUNI CHAKMA] <br>
