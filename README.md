@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="images/banner.png" alt="Firewall Configuration & Testing" width="100%">
+  <img src="images/banner.png" alt="Firewall Configuration & Testing" width="100%" height="350">
 </p>
 
 # 🔐 Firewall Configuration & Testing
