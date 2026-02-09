@@ -104,9 +104,9 @@ unused or insecure ports.
 
 ### Allowed ports:
 - 22/tcp (SSH) for secure remote access `sudo ufw allow 22/tcp`
-note:
-* ✔️ Secure remote access
-* ✔️ Mandatory on servers
+- note:
+  * ✔️ Secure remote access
+  * ✔️ Mandatory on servers
 - 80/tcp (HTTP) for web traffic `sudo ufw allow 80/tcp`
   Note:
   * ✔️ Web traffic
@@ -115,13 +115,13 @@ note:
 
 ### Denied ports:
 - 21/tcp (FTP) due to plaintext credential transmission `sudo ufw deny 21/tcp`
-note:
-- ❌ Sends credentials in plaintext
-- ❌ High risk
+- note:
+  * ❌ Sends credentials in plaintext
+  * ❌ High risk
 - 23/tcp (Telnet) due to lack of encryption `sudo ufw deny 23/tcp`
-not:
-- ❌ No encryption
-- ❌ Common attack target
+- note:
+  * ❌ No encryption
+  * ❌ Common attack target
 This configuration reduces the system attack surface while ensuring required
 services remain accessible.
 
