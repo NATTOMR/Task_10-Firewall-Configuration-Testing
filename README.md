@@ -1,4 +1,18 @@
-![Firewall Configuration & Testing](https://github.com/NATTOMR/Task_10-Firewall-Configuration-Testing/blob/main/images/firewall%20banner.png)
+<p align="center">
+  <img src="banner.png" alt="Firewall Configuration & Testing" width="100%">
+</p>
+
+# 🔐 Firewall Configuration & Testing
+
+This project demonstrates hands-on firewall configuration, testing, and
+monitoring using **Linux (UFW)** and **Windows Defender Firewall**. The goal is to
+apply real-world defensive security practices by controlling inbound and outbound
+traffic, reducing the attack surface, and validating firewall behavior through
+testing and log analysis.
+
+> **⚠️ All configurations and testing procedures in this project were performed in a
+> controlled virtual lab environment for educational purposes.**
+
 
 # 🔥Firewall Configuration & Testing
 
