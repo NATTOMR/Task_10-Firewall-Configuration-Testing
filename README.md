@@ -8,10 +8,6 @@
   <img src="https://img.shields.io/badge/Firewall-UFW%20%7C%20Windows%20Defender-green?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Security-Blue%20Team-informational?style=for-the-badge" />
 </p>
-
-# 🔐 Firewall Configuration & Testing
-
-
 # 🔐 Firewall Configuration & Testing
 
 ## 📌 Project Overview
