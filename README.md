@@ -131,26 +131,20 @@ services remain accessible.
 
 ### 🔍 Verify Denied Ports
 `sudo ufw status numbered`
-
-```
 ### Connectivity Testing (Nmap)
-
 Network connectivity was tested using Nmap from an external Ubuntu machine.
-
 Scan command:
 nmap 10.0.2.15
-
 Results:
 - Port 22/tcp (SSH) is open, confirming allowed inbound access
 - All other TCP ports are closed or filtered
 - No unnecessary services are exposed
-
 This confirms that firewall rules are correctly enforced and only required
 services are accessible.
-```
 
+``
 ![images](https://github.com/NATTOMR/Task_10-Firewall-Configuration-Testing/blob/main/images/UFW-3.png)
-
+---
 ### Firewall Log Monitoring
 
 UFW logging was enabled to monitor firewall activity and verify rule enforcement.
@@ -183,6 +177,7 @@ Telnet traffic. This verifies that insecure legacy services are effectively
 restricted by the firewall configuration.
 
 ![image](https://github.com/NATTOMR/Task_10-Firewall-Configuration-Testing/blob/main/images/ubuntu%20output-2.png)
+---
 ### Set Logging Level
 `sudo ufw logging medium`
  - note: UFW logs are stored at:
@@ -195,7 +190,7 @@ restricted by the firewall configuration.
 `sudo tail -f /var/log/ufw.log`
 
 ![image](https://github.com/NATTOMR/Task_10-Firewall-Configuration-Testing/blob/main/images/f%20log%20obsevation.png)
-
+---
 🔴 [UFW BLOCK]
 
 Example:
@@ -216,10 +211,11 @@ Means:
   📌 Logged successfully
 
 ### This satisfies:
-    ✅ Observe logs
-    ✅ Block traffic
-    ✅ Explain impact
-
+    
+  > ✅ Observe logs
+  > ✅ Block traffic
+  > ✅ Explain impact
+---
 ### 🟢 [UFW ALLOW]
 
 Example:
@@ -242,7 +238,7 @@ This proves:
    * Outbound rules are working
 
    * Stateful firewall behavior is correct
-
+----
 
 ## 🪟 Windows Firewall Configuration
 
