@@ -1,4 +1,6 @@
-# 🔥 Task 10: Firewall Configuration & Testing
+![Firewall Configuration & Testing](./firewall banner.png)
+
+# 🔥Firewall Configuration & Testing
 
 ## 📌 Project Overview
 This project demonstrates practical firewall configuration and testing skills using host-based firewalls. The goal is to understand firewall concepts, configure security rules, test network connectivity, analyze logs, block malicious traffic, and document the impact of firewall rules.
