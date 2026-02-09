@@ -62,7 +62,7 @@ Process in 5 Steps:
 ---
 
 
-## ⚙️ Firewall Configuration
+## ⚙️ Configure inbound and outbound Firewall Configuration
 
 ### 1️⃣ Enable Firewall
 **Linux (UFW):**
