@@ -7,15 +7,6 @@ This lab simulates real-world defensive security tasks commonly performed by sys
 
 ---
 
-## 🛠️ Tools Used
-- **UFW (Uncomplicated Firewall)** – Linux
-- **Windows Defender Firewall** – Windows
-- **iptables** (Alternative / Advanced option)
-- **nmap** – Port scanning
-- **ping / curl / telnet** – Connectivity testing
-- **log files** – Firewall event analysis
-
----
 
 ## 🎯 Objectives
 - Learn core firewall concepts
@@ -28,16 +19,48 @@ This lab simulates real-world defensive security tasks commonly performed by sys
 - Explain the security impact of configurations
 
 ---
+## Firewall Definition: What Is A Network Firewall?
+A firewall is a network security device designed to monitor, filter, and control incoming and outgoing network traffic based on predetermined security rules. The primary purpose of a firewall is to establish a barrier between a trusted internal network and untrusted external networks.
 
-## 📚 Firewall Concepts Covered
-- Inbound vs Outbound traffic
-- Stateful vs Stateless firewalls
-- Default deny vs default allow
-- Port-based filtering
-- IP-based blocking
-- Logging and monitoring
+Firewalls come in both hardware and software forms, and they work by inspecting data packets and determining whether to allow or block them based on a set of rules. Organizations can configure these rules to permit or deny traffic based on various criteria, such as source and destination IP addresses, port numbers, and protocol type. 
+
+### Firewalls have evolved through four distinct phases:
+
+- First-generation firewalls began in 1989 with the packet filtering approach. These firewalls examine individual data packets, making decisions to allow or block them based on predefined rules. However, these were unable to identify if those packets contained malicious code (i.e., malware).
+
+- Second-generation firewalls began in the early 2000s. Otherwise known as stateful firewalls, these track the state of active connections. By observing network traffic, they use context to identify and act on suspicious behavior. Unfortunately, this generation also has its limitations.
+
+- Third-generation firewalls emerged in the latter half of the early 2000s. Often called proxy firewalls or application-level gateways, these act as intermediaries between a client and server, forwarding requests and filtering responses.
+
+- Fourth-generation firewall, also known as next-generation firewall (NGFW), started in 2010. NGFWs combine traditional capabilities with new, advanced features such as intrusion prevention (IPS), application-layer filtering, and advanced threat detection.
+
+## How Does A Firewall Work?
+Firewalls are essential security tools that monitor and control network traffic, acting like gatekeepers for your system. They inspect data packets, comparing them to predefined rules to determine whether to allow or block them. 
+
+
+### How Firewalls Filter Traffic to Prevent Unauthorized Access
+
+Process in 5 Steps:
+
+1. Traffic Monitoring: Constantly monitors all incoming and outgoing network traffic, acting as a vigilant gatekeeper for your system.
+2. Rule Application: Compares each data packet against predefined security rules to determine if it should be allowed or blocked.
+3. Packet Inspection: Examines packet headers and contents, including source/destination IP addresses and ports, for suspicious activity.
+4. Decision Making:  Based on inspection and rules, decides to allow legitimate traffic and block potential threats.
+5. Logging and Alerts:  Maintains detailed logs of actions and generates alerts for suspicious activity or unauthorized access attempts.
+
+## Firewall Types
+
+
+## 🛠️ Tools Used
+- **UFW (Uncomplicated Firewall)** – Linux
+- **Windows Defender Firewall** – Windows
+- **iptables** (Alternative / Advanced option)
+- **nmap** – Port scanning
+- **ping / curl / telnet** – Connectivity testing
+- **log files** – Firewall event analysis
 
 ---
+
 
 ## ⚙️ Firewall Configuration
 
@@ -115,6 +138,16 @@ Rule #	Action	Port/IP	Protocol	Purpose
 - Log analysis
 
 - Security impact explanation
+- 
+## 📚 Firewall Concepts Covered
+- Inbound vs Outbound traffic
+- Stateful vs Stateless firewalls
+- Default deny vs default allow
+- Port-based filtering
+- IP-based blocking
+- Logging and monitoring
+
+---
 
 # ✅ Final Outcome
 - ✔️ Practical firewall management skills
