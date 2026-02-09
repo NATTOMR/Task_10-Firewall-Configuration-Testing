@@ -261,7 +261,7 @@ The firewall was enabled for all profiles using an elevated command prompt:
 ```
 netsh advfirewall set allprofiles state on
 ```
-![image]()
+![image](https://github.com/NATTOMR/Task_10-Firewall-Configuration-Testing/blob/main/images/wfw-1.jpeg)
   🛡️ Default Firewall Policies
 
 To follow the principle of least privilege, default firewall policies were set
