@@ -270,7 +270,7 @@ to block all inbound traffic while allowing outbound traffic.
 ```
 netsh advfirewall set allprofiles firewallpolicy blockinbound,allowoutbound
 ```
-
+![image](https://github.com/NATTOMR/Task_10-Firewall-Configuration-Testing/blob/main/images/wfw-2.jpeg)
 - Inbound traffic is blocked by default to prevent unauthorized access
 
 - Outbound traffic is allowed to enable normal system operations such as
